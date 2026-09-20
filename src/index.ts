@@ -108,6 +108,7 @@ export {
   payshapAccountZaZarPaymentChannel,
   payshapShapidZaZarPaymentChannel,
   pesalinkAccountKeKesPaymentChannel,
+  telebirrPhoneEtEtbPaymentChannel,
   tnmMpambaMerchantMwMwkPaymentChannel,
   tnmMpambaMwMwkPaymentChannel,
 } from "./channels/index.js";
