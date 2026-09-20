@@ -19,6 +19,7 @@ export { cashEgEgpPaymentChannel } from "./eg/cash.js";
 export { cashEhMadPaymentChannel } from "./eh/cash.js";
 export { cashErErnPaymentChannel } from "./er/cash.js";
 export { cashEtEtbPaymentChannel } from "./et/cash.js";
+export { telebirrPhoneEtEtbPaymentChannel } from "./et/telebirr_phone.js";
 export { cashGaXafPaymentChannel } from "./ga/cash.js";
 export { cashGbGbpPaymentChannel } from "./gb/cash.js";
 export { cashGhGhsPaymentChannel } from "./gh/cash.js";
@@ -94,6 +95,7 @@ import { cashEgEgpPaymentChannel } from "./eg/cash.js";
 import { cashEhMadPaymentChannel } from "./eh/cash.js";
 import { cashErErnPaymentChannel } from "./er/cash.js";
 import { cashEtEtbPaymentChannel } from "./et/cash.js";
+import { telebirrPhoneEtEtbPaymentChannel } from "./et/telebirr_phone.js";
 import { cashGaXafPaymentChannel } from "./ga/cash.js";
 import { cashGbGbpPaymentChannel } from "./gb/cash.js";
 import { cashGhGhsPaymentChannel } from "./gh/cash.js";
@@ -170,6 +172,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashEhMadPaymentChannel,
   cashErErnPaymentChannel,
   cashEtEtbPaymentChannel,
+  telebirrPhoneEtEtbPaymentChannel,
   cashGaXafPaymentChannel,
   cashGbGbpPaymentChannel,
   cashGhGhsPaymentChannel,
