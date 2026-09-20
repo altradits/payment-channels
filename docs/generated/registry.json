@@ -289,6 +289,60 @@
     "network": { "id": "cash", "label": "Cash", "country": "ET", "currency": "ETB" }
   },
   {
+    "id": "telebirr_phone_et_etb",
+    "version": 1,
+    "display": {
+      "label": "Telebirr phone",
+      "shortLabel": "Telebirr",
+      "description": "Telebirr wallet transfer to an Ethiopian phone number.",
+      "icon": "telebirr",
+      "group": "mobile_money"
+    },
+    "network": { "id": "telebirr", "label": "Telebirr", "country": "ET", "currency": "ETB" },
+    "support": { "automation": "manual" },
+    "fields": [
+      {
+        "key": "phoneNumber",
+        "label": "Phone number",
+        "type": "phone",
+        "required": true,
+        "sensitive": true,
+        "mask": "phone",
+        "normalize": ["trim", "e164_et_phone"],
+        "placeholder": "+251912345678",
+        "validation": [
+          {
+            "kind": "pattern",
+            "pattern": "^\\+251[79][0-9]{8}$",
+            "message": "Use an Ethiopian phone number in international format, e.g. +251912345678 or +251712345678"
+          }
+        ]
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text",
+        "required": false,
+        "normalize": ["trim"],
+        "validation": [{ "kind": "max_length", "length": 100 }]
+      }
+    ],
+    "detailRows": [{ "key": "phoneNumber", "label": "Phone number", "fields": ["phoneNumber"], "copyable": true }],
+    "instructions": {
+      "payer": ["Send the exact amount to the displayed Telebirr phone number via the Telebirr app or *127#."],
+      "payee": ["Confirm the Telebirr reference is available if the payment is disputed."]
+    },
+    "evidence": [
+      {
+        "key": "transactionReference",
+        "label": "Transaction reference",
+        "type": "text",
+        "required": true,
+        "validation": [{ "kind": "min_length", "length": 3 }]
+      }
+    ]
+  },
+  {
     "id": "cash_ga_xaf",
     "version": 2,
     "display": {
