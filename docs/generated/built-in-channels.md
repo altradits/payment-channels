@@ -23,6 +23,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_eh_mad`                | Cash                     | `EH`    | `MAD`    | `cash`         | `none`     |       2 |
 | `cash_er_ern`                | Cash                     | `ER`    | `ERN`    | `cash`         | `none`     |       2 |
 | `cash_et_etb`                | Cash                     | `ET`    | `ETB`    | `cash`         | `none`     |       2 |
+| `telebirr_phone_et_etb`      | Telebirr phone           | `ET`    | `ETB`    | `mobile_money` | `manual`   |       1 |
 | `cash_ga_xaf`                | Cash                     | `GA`    | `XAF`    | `cash`         | `none`     |       2 |
 | `cash_gb_gbp`                | Cash                     | `GB`    | `GBP`    | `cash`         | `none`     |       2 |
 | `cash_gh_ghs`                | Cash                     | `GH`    | `GHS`    | `cash`         | `none`     |       2 |
