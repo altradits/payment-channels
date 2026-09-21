@@ -9,6 +9,8 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_ao_aoa`                | Cash                     | `AO`    | `AOA`    | `cash`         | `none`     |       2 |
 | `cash_bi_bif`                | Cash                     | `BI`    | `BIF`    | `cash`         | `none`     |       2 |
 | `cash_bw_bwp`                | Cash                     | `BW`    | `BWP`    | `cash`         | `none`     |       2 |
+| `cash_dz_dzd`                | Cash                     | `DZ`    | `DZD`    | `cash`         | `none`     |       2 |
+| `cash_eg_egp`                | Cash                     | `EG`    | `EGP`    | `cash`         | `none`     |       2 |
 | `cash_et_etb`                | Cash                     | `ET`    | `ETB`    | `cash`         | `none`     |       2 |
 | `cash_gb_gbp`                | Cash                     | `GB`    | `GBP`    | `cash`         | `none`     |       2 |
 | `cash_in_inr`                | Cash                     | `IN`    | `INR`    | `cash`         | `none`     |       2 |
@@ -20,6 +22,8 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `airtel_money_ke_kes`        | Airtel Money             | `KE`    | `KES`    | `mobile_money` | `api`      |       2 |
 | `cash_ke_kes`                | Cash                     | `KE`    | `KES`    | `cash`         | `none`     |       2 |
 | `cash_ls_lsl`                | Cash                     | `LS`    | `LSL`    | `cash`         | `none`     |       2 |
+| `cash_ly_lyd`                | Cash                     | `LY`    | `LYD`    | `cash`         | `none`     |       2 |
+| `cash_ma_mad`                | Cash                     | `MA`    | `MAD`    | `cash`         | `none`     |       2 |
 | `cash_mu_mur`                | Cash                     | `MU`    | `MUR`    | `cash`         | `none`     |       2 |
 | `airtel_money_mw_mwk`        | Airtel Money Malawi      | `MW`    | `MWK`    | `mobile_money` | `api`      |       2 |
 | `airtel_money_till_mw_mwk`   | Airtel Money till        | `MW`    | `MWK`    | `mobile_money` | `manual`   |       2 |
@@ -31,8 +35,10 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_ng_ngn`                | Cash                     | `NG`    | `NGN`    | `cash`         | `none`     |       2 |
 | `cash_pk_pkr`                | Cash                     | `PK`    | `PKR`    | `cash`         | `none`     |       2 |
 | `cash_rw_rwf`                | Cash                     | `RW`    | `RWF`    | `cash`         | `none`     |       2 |
+| `cash_sd_sdg`                | Cash                     | `SD`    | `SDG`    | `cash`         | `none`     |       2 |
 | `cash_ss_ssp`                | Cash                     | `SS`    | `SSP`    | `cash`         | `none`     |       2 |
 | `cash_sz_szl`                | Cash                     | `SZ`    | `SZL`    | `cash`         | `none`     |       2 |
+| `cash_tn_tnd`                | Cash                     | `TN`    | `TND`    | `cash`         | `none`     |       2 |
 | `cash_tz_tzs`                | Cash                     | `TZ`    | `TZS`    | `cash`         | `none`     |       2 |
 | `cash_ug_ugx`                | Cash                     | `UG`    | `UGX`    | `cash`         | `none`     |       2 |
 | `cash_us_usd`                | Cash                     | `US`    | `USD`    | `cash`         | `none`     |       2 |
