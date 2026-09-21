@@ -158,15 +158,22 @@ Built-in IDs use `<network>_<variant?>_<country>_<currency>`, with lowercase cou
 
 The seed registry currently includes:
 
+- Angola (`AOA`): cash
+- Botswana (`BWP`): cash
 - Burundi (`BIF`): cash
+- Eswatini (`SZL`): cash
 - Ethiopia (`ETB`): cash
 - Kenya (`KES`): M-Pesa phone, M-Pesa Pochi la Biashara, M-Pesa till, M-Pesa paybill, Airtel Money, PesaLink bank account, and cash
+- Lesotho (`LSL`): cash
 - Malawi (`MWK`): Airtel Money, TNM Mpamba, and cash
+- Mozambique (`MZN`): cash
+- Namibia (`NAD`): cash
 - Rwanda (`RWF`): cash
 - South Africa (`ZAR`): PayShap ShapID, PayShap bank account, and cash
 - South Sudan (`SSP`): cash
 - Tanzania (`TZS`): cash
 - Uganda (`UGX`): cash
+- Zambia (`ZMW`): cash
 
 Cash is intentionally represented as a channel, but it has no structured payment fields and `automation: PaymentChannelAutomation.None`. A schema never implies that an external provider integration exists.
 
