@@ -269,8 +269,40 @@ test("cash definition composes into another country and currency", () => {
 test("every represented country has a built-in cash channel", () => {
   assert.deepEqual(
     builtinPaymentChannels.filter((channel) => channel.display.group === PaymentChannelGroup.Cash).map((channel) => channel.id),
-    ["cash_mw_mwk", "cash_za_zar", "cash_ke_kes"],
+    [
+      "cash_bi_bif",
+      "cash_et_etb",
+      "cash_ke_kes",
+      "cash_mw_mwk",
+      "cash_rw_rwf",
+      "cash_ss_ssp",
+      "cash_tz_tzs",
+      "cash_ug_ugx",
+      "cash_za_zar",
+    ],
   );
+});
+
+test("registry exposes built-in cash channels for East African markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const markets = [
+    { country: "BI", currency: "BIF", id: "cash_bi_bif" },
+    { country: "ET", currency: "ETB", id: "cash_et_etb" },
+    { country: "KE", currency: "KES", id: "cash_ke_kes" },
+    { country: "RW", currency: "RWF", id: "cash_rw_rwf" },
+    { country: "SS", currency: "SSP", id: "cash_ss_ssp" },
+    { country: "TZ", currency: "TZS", id: "cash_tz_tzs" },
+    { country: "UG", currency: "UGX", id: "cash_ug_ugx" },
+  ];
+
+  for (const { country, currency, id } of markets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      currency,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(channels.map((channel) => channel.id), [id]);
+  }
 });
 
 test("channel source files are grouped by country and match stable channel IDs", async () => {
