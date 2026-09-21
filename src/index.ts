@@ -36,9 +36,15 @@ import { builtinPaymentChannels } from "./channels/index.js";
 export {
   airtelMoneyKeKesPaymentChannel,
   airtelMoneyMwMwkPaymentChannel,
-  cashMwMwkPaymentChannel,
   builtinPaymentChannels,
+  cashBiBifPaymentChannel,
+  cashEtEtbPaymentChannel,
   cashKeKesPaymentChannel,
+  cashMwMwkPaymentChannel,
+  cashRwRwfPaymentChannel,
+  cashSsSspPaymentChannel,
+  cashTzTzsPaymentChannel,
+  cashUgUgxPaymentChannel,
   cashZaZarPaymentChannel,
   createCashPaymentChannel,
   mpesaPaybillKeKesPaymentChannel,
@@ -47,6 +53,7 @@ export {
   mpesaTillKeKesPaymentChannel,
   payshapAccountZaZarPaymentChannel,
   payshapShapidZaZarPaymentChannel,
+  pesalinkAccountKeKesPaymentChannel,
   tnmMpambaMwMwkPaymentChannel,
 } from "./channels/index.js";
 

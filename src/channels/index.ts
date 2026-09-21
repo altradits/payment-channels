@@ -2,6 +2,8 @@ import type { PaymentChannelSchema } from "../core.js";
 
 export { createCashPaymentChannel } from "./shared.js";
 
+export { cashBiBifPaymentChannel } from "./bi/cash.js";
+export { cashEtEtbPaymentChannel } from "./et/cash.js";
 export { airtelMoneyKeKesPaymentChannel } from "./ke/airtel_money.js";
 export { cashKeKesPaymentChannel } from "./ke/cash.js";
 export { mpesaPaybillKeKesPaymentChannel } from "./ke/mpesa_paybill.js";
@@ -12,10 +14,16 @@ export { pesalinkAccountKeKesPaymentChannel } from "./ke/pesalink_account.js";
 export { airtelMoneyMwMwkPaymentChannel } from "./mw/airtel_money.js";
 export { cashMwMwkPaymentChannel } from "./mw/cash.js";
 export { tnmMpambaMwMwkPaymentChannel } from "./mw/tnm_mpamba.js";
+export { cashRwRwfPaymentChannel } from "./rw/cash.js";
+export { cashSsSspPaymentChannel } from "./ss/cash.js";
+export { cashTzTzsPaymentChannel } from "./tz/cash.js";
+export { cashUgUgxPaymentChannel } from "./ug/cash.js";
 export { cashZaZarPaymentChannel } from "./za/cash.js";
 export { payshapAccountZaZarPaymentChannel } from "./za/payshap_account.js";
 export { payshapShapidZaZarPaymentChannel } from "./za/payshap_shapid.js";
 
+import { cashBiBifPaymentChannel } from "./bi/cash.js";
+import { cashEtEtbPaymentChannel } from "./et/cash.js";
 import { airtelMoneyKeKesPaymentChannel } from "./ke/airtel_money.js";
 import { cashKeKesPaymentChannel } from "./ke/cash.js";
 import { mpesaPaybillKeKesPaymentChannel } from "./ke/mpesa_paybill.js";
@@ -26,22 +34,32 @@ import { pesalinkAccountKeKesPaymentChannel } from "./ke/pesalink_account.js";
 import { airtelMoneyMwMwkPaymentChannel } from "./mw/airtel_money.js";
 import { cashMwMwkPaymentChannel } from "./mw/cash.js";
 import { tnmMpambaMwMwkPaymentChannel } from "./mw/tnm_mpamba.js";
+import { cashRwRwfPaymentChannel } from "./rw/cash.js";
+import { cashSsSspPaymentChannel } from "./ss/cash.js";
+import { cashTzTzsPaymentChannel } from "./tz/cash.js";
+import { cashUgUgxPaymentChannel } from "./ug/cash.js";
 import { cashZaZarPaymentChannel } from "./za/cash.js";
 import { payshapAccountZaZarPaymentChannel } from "./za/payshap_account.js";
 import { payshapShapidZaZarPaymentChannel } from "./za/payshap_shapid.js";
 
 export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
+  cashBiBifPaymentChannel,
+  cashEtEtbPaymentChannel,
   mpesaPhoneKeKesPaymentChannel,
   mpesaPochiKeKesPaymentChannel,
   mpesaTillKeKesPaymentChannel,
   mpesaPaybillKeKesPaymentChannel,
   pesalinkAccountKeKesPaymentChannel,
   airtelMoneyKeKesPaymentChannel,
+  cashKeKesPaymentChannel,
   airtelMoneyMwMwkPaymentChannel,
   cashMwMwkPaymentChannel,
   tnmMpambaMwMwkPaymentChannel,
+  cashRwRwfPaymentChannel,
+  cashSsSspPaymentChannel,
+  cashTzTzsPaymentChannel,
+  cashUgUgxPaymentChannel,
   payshapShapidZaZarPaymentChannel,
   payshapAccountZaZarPaymentChannel,
   cashZaZarPaymentChannel,
-  cashKeKesPaymentChannel,
 ];
