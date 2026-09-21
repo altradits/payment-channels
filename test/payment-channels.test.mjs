@@ -270,15 +270,22 @@ test("every represented country has a built-in cash channel", () => {
   assert.deepEqual(
     builtinPaymentChannels.filter((channel) => channel.display.group === PaymentChannelGroup.Cash).map((channel) => channel.id),
     [
+      "cash_ao_aoa",
       "cash_bi_bif",
+      "cash_bw_bwp",
       "cash_et_etb",
       "cash_ke_kes",
+      "cash_ls_lsl",
       "cash_mw_mwk",
+      "cash_mz_mzn",
+      "cash_na_nad",
       "cash_rw_rwf",
       "cash_ss_ssp",
+      "cash_sz_szl",
       "cash_tz_tzs",
       "cash_ug_ugx",
       "cash_za_zar",
+      "cash_zm_zmw",
     ],
   );
 });
@@ -293,6 +300,28 @@ test("registry exposes built-in cash channels for East African markets", () => {
     { country: "SS", currency: "SSP", id: "cash_ss_ssp" },
     { country: "TZ", currency: "TZS", id: "cash_tz_tzs" },
     { country: "UG", currency: "UGX", id: "cash_ug_ugx" },
+  ];
+
+  for (const { country, currency, id } of markets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      currency,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(channels.map((channel) => channel.id), [id]);
+  }
+});
+
+test("registry exposes built-in cash channels for South African markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const markets = [
+    { country: "AO", currency: "AOA", id: "cash_ao_aoa" },
+    { country: "BW", currency: "BWP", id: "cash_bw_bwp" },
+    { country: "LS", currency: "LSL", id: "cash_ls_lsl" },
+    { country: "MZ", currency: "MZN", id: "cash_mz_mzn" },
+    { country: "NA", currency: "NAD", id: "cash_na_nad" },
+    { country: "SZ", currency: "SZL", id: "cash_sz_szl" },
+    { country: "ZM", currency: "ZMW", id: "cash_zm_zmw" },
   ];
 
   for (const { country, currency, id } of markets) {
