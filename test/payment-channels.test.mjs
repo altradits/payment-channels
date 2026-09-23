@@ -419,6 +419,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_bw_bwp",
       "cash_dz_dzd",
       "cash_eg_egp",
+      "cash_eh_mad",
       "cash_et_etb",
       "cash_gb_gbp",
       "cash_in_inr",
