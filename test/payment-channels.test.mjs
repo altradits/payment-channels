@@ -477,6 +477,7 @@ test("registry exposes built-in cash channels for North African markets", () => 
   const markets = [
     { country: "DZ", currency: "DZD", id: "cash_dz_dzd" },
     { country: "EG", currency: "EGP", id: "cash_eg_egp" },
+    { country: "EH", currency: "MAD", id: "cash_eh_mad" },
     { country: "LY", currency: "LYD", id: "cash_ly_lyd" },
     { country: "MA", currency: "MAD", id: "cash_ma_mad" },
     { country: "SD", currency: "SDG", id: "cash_sd_sdg" },
