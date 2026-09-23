@@ -44,6 +44,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_ke_kes`                | Cash                     | `KE`    | `KES`    | `cash`         | `none`     |       2 |
 | `cash_km_kmf`                | Cash                     | `KM`    | `KMF`    | `cash`         | `none`     |       2 |
 | `cash_lr_lrd`                | Cash                     | `LR`    | `LRD`    | `cash`         | `none`     |       2 |
+| `cash_lr_usd`                | Cash                     | `LR`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_ls_lsl`                | Cash                     | `LS`    | `LSL`    | `cash`         | `none`     |       2 |
 | `cash_ls_zar`                | Cash                     | `LS`    | `ZAR`    | `cash`         | `none`     |       2 |
 | `cash_ly_lyd`                | Cash                     | `LY`    | `LYD`    | `cash`         | `none`     |       2 |
@@ -72,6 +73,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_sl_sle`                | Cash                     | `SL`    | `SLE`    | `cash`         | `none`     |       2 |
 | `cash_sn_xof`                | Cash                     | `SN`    | `XOF`    | `cash`         | `none`     |       2 |
 | `cash_so_sos`                | Cash                     | `SO`    | `SOS`    | `cash`         | `none`     |       2 |
+| `cash_so_usd`                | Cash                     | `SO`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_ss_ssp`                | Cash                     | `SS`    | `SSP`    | `cash`         | `none`     |       2 |
 | `cash_st_stn`                | Cash                     | `ST`    | `STN`    | `cash`         | `none`     |       2 |
 | `cash_sz_szl`                | Cash                     | `SZ`    | `SZL`    | `cash`         | `none`     |       2 |
@@ -87,4 +89,5 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `payshap_account_za_zar`     | PayShap bank account     | `ZA`    | `ZAR`    | `bank`         | `manual`   |       1 |
 | `cash_za_zar`                | Cash                     | `ZA`    | `ZAR`    | `cash`         | `none`     |       2 |
 | `cash_zm_zmw`                | Cash                     | `ZM`    | `ZMW`    | `cash`         | `none`     |       2 |
+| `cash_zw_usd`                | Cash                     | `ZW`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_zw_zwg`                | Cash                     | `ZW`    | `ZWG`    | `cash`         | `none`     |       2 |
