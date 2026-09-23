@@ -11,6 +11,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_bw_bwp`                | Cash                     | `BW`    | `BWP`    | `cash`         | `none`     |       2 |
 | `cash_dz_dzd`                | Cash                     | `DZ`    | `DZD`    | `cash`         | `none`     |       2 |
 | `cash_eg_egp`                | Cash                     | `EG`    | `EGP`    | `cash`         | `none`     |       2 |
+| `cash_eh_mad`                | Cash                     | `EH`    | `MAD`    | `cash`         | `none`     |       2 |
 | `cash_et_etb`                | Cash                     | `ET`    | `ETB`    | `cash`         | `none`     |       2 |
 | `cash_gb_gbp`                | Cash                     | `GB`    | `GBP`    | `cash`         | `none`     |       2 |
 | `cash_in_inr`                | Cash                     | `IN`    | `INR`    | `cash`         | `none`     |       2 |
