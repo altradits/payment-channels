@@ -482,7 +482,9 @@ test("every represented country has a built-in cash channel", () => {
       "cash_bf_xof",
       "cash_bi_bif",
       "cash_bj_xof",
+      "cash_bm_bmd",
       "cash_bw_bwp",
+      "cash_ca_cad",
       "cash_cd_cdf",
       "cash_cf_xaf",
       "cash_cg_xaf",
@@ -498,6 +500,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_ga_xaf",
       "cash_gb_gbp",
       "cash_gh_ghs",
+      "cash_gl_dkk",
       "cash_gm_gmd",
       "cash_gn_gnf",
       "cash_gq_xaf",
@@ -519,6 +522,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_ne_xof",
       "cash_ng_ngn",
       "cash_pk_pkr",
+      "cash_pm_eur",
       "cash_re_eur",
       "cash_rw_rwf",
       "cash_sc_scr",
@@ -696,6 +700,29 @@ test("registry exposes built-in cash channels for additional fiat currency marke
     { country: "MU", currency: "MUR", id: "cash_mu_mur" },
     { country: "NG", currency: "NGN", id: "cash_ng_ngn" },
     { country: "PK", currency: "PKR", id: "cash_pk_pkr" },
+    { country: "US", currency: "USD", id: "cash_us_usd" },
+  ];
+
+  for (const { country, currency, id } of markets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      currency,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(
+      channels.map((channel) => channel.id),
+      [id],
+    );
+  }
+});
+
+test("registry exposes built-in cash channels for Northern American markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const markets = [
+    { country: "BM", currency: "BMD", id: "cash_bm_bmd" },
+    { country: "CA", currency: "CAD", id: "cash_ca_cad" },
+    { country: "GL", currency: "DKK", id: "cash_gl_dkk" },
+    { country: "PM", currency: "EUR", id: "cash_pm_eur" },
     { country: "US", currency: "USD", id: "cash_us_usd" },
   ];
 
