@@ -7,6 +7,7 @@ export { cashBiBifPaymentChannel } from "./bi/cash.js";
 export { cashBwBwpPaymentChannel } from "./bw/cash.js";
 export { cashDzDzdPaymentChannel } from "./dz/cash.js";
 export { cashEgEgpPaymentChannel } from "./eg/cash.js";
+export { cashEhMadPaymentChannel } from "./eh/cash.js";
 export { cashEtEtbPaymentChannel } from "./et/cash.js";
 export { cashGbGbpPaymentChannel } from "./gb/cash.js";
 export { cashInInrPaymentChannel } from "./in/cash.js";
@@ -48,6 +49,7 @@ import { cashBiBifPaymentChannel } from "./bi/cash.js";
 import { cashBwBwpPaymentChannel } from "./bw/cash.js";
 import { cashDzDzdPaymentChannel } from "./dz/cash.js";
 import { cashEgEgpPaymentChannel } from "./eg/cash.js";
+import { cashEhMadPaymentChannel } from "./eh/cash.js";
 import { cashEtEtbPaymentChannel } from "./et/cash.js";
 import { cashGbGbpPaymentChannel } from "./gb/cash.js";
 import { cashInInrPaymentChannel } from "./in/cash.js";
@@ -90,6 +92,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashBwBwpPaymentChannel,
   cashDzDzdPaymentChannel,
   cashEgEgpPaymentChannel,
+  cashEhMadPaymentChannel,
   cashEtEtbPaymentChannel,
   cashGbGbpPaymentChannel,
   cashInInrPaymentChannel,

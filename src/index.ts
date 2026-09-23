@@ -43,6 +43,7 @@ export {
   cashBwBwpPaymentChannel,
   cashDzDzdPaymentChannel,
   cashEgEgpPaymentChannel,
+  cashEhMadPaymentChannel,
   cashEtEtbPaymentChannel,
   cashGbGbpPaymentChannel,
   cashInInrPaymentChannel,
