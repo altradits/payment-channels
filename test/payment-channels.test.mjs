@@ -77,7 +77,10 @@ test("registry exposes the built-in Ethiopian Telebirr channel", () => {
     country: "ET",
     group: PaymentChannelGroup.MobileMoney,
   });
-  assert.deepEqual(channels.map((channel) => channel.id), ["telebirr_phone_et_etb"]);
+  assert.deepEqual(
+    channels.map((channel) => channel.id),
+    ["telebirr_phone_et_etb"],
+  );
 });
 
 test("Telebirr phone details are normalized and rendered", () => {
@@ -94,29 +97,41 @@ test("Telebirr phone details are normalized and rendered", () => {
   ]);
 });
 
-test("Telebirr supports API automation and Ethiopian phone formats", () => {
+test("Telebirr supports manual wallet transfer and Ethiopian phone formats", () => {
   const schema = builtinPaymentChannels.find((channel) => channel.id === "telebirr_phone_et_etb");
   assert.ok(schema);
-  assert.equal(schema.support.automation, PaymentChannelAutomation.Api);
+  assert.equal(schema.support.automation, PaymentChannelAutomation.Manual);
 
-  for (const phoneNumber of ["0912345678", "00251912345678", "+251912345678"]) {
-    const validation = validatePaymentChannelData(schema, { phoneNumber });
-    assert.equal(validation.valid, true, phoneNumber);
-    assert.equal(validation.data.phoneNumber, "+251912345678");
+  const validCases = [
+    { input: "0912345678", expected: "+251912345678" },
+    { input: "0712345678", expected: "+251712345678" },
+    { input: "00251912345678", expected: "+251912345678" },
+    { input: "00251712345678", expected: "+251712345678" },
+    { input: "+251912345678", expected: "+251912345678" },
+    { input: "+251712345678", expected: "+251712345678" },
+  ];
+
+  for (const { input, expected } of validCases) {
+    const validation = validatePaymentChannelData(schema, { phoneNumber: input });
+    assert.equal(validation.valid, true, input);
+    assert.equal(validation.data.phoneNumber, expected);
   }
 });
 
 test("Telebirr rejects invalid Ethiopian phone numbers", () => {
   const schema = builtinPaymentChannels.find((channel) => channel.id === "telebirr_phone_et_etb");
   assert.ok(schema);
-  const validation = validatePaymentChannelData(schema, { phoneNumber: "+254712345678" });
-  assert.equal(validation.valid, false);
-  assert.deepEqual(validation.issues, [
-    {
-      field: "phoneNumber",
-      message: "Use an Ethiopian phone number in international format, e.g. +251912345678",
-    },
-  ]);
+
+  for (const invalidNumber of ["+254712345678", "+251812345678", "0812345678", "12345"]) {
+    const validation = validatePaymentChannelData(schema, { phoneNumber: invalidNumber });
+    assert.equal(validation.valid, false, invalidNumber);
+    assert.deepEqual(validation.issues, [
+      {
+        field: "phoneNumber",
+        message: "Use an Ethiopian phone number in international format, e.g. +251912345678 or +251712345678",
+      },
+    ]);
+  }
 });
 
 test("registry exposes the built-in ZAR PayShap bank channel", () => {
