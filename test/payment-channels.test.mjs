@@ -492,6 +492,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_as_usd",
       "cash_at_eur",
       "cash_bf_xof",
+      "cash_bg_bgn",
       "cash_bi_bif",
       "cash_bj_xof",
       "cash_bl_eur",
@@ -502,6 +503,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_br_brl",
       "cash_bs_bsd",
       "cash_bw_bwp",
+      "cash_by_byn",
       "cash_bz_bzd",
       "cash_ca_cad",
       "cash_cd_cdf",
@@ -517,6 +519,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_cu_cup",
       "cash_cv_cve",
       "cash_cw_ang",
+      "cash_cz_czk",
       "cash_de_eur",
       "cash_dk_dkk",
       "cash_dj_djf",
@@ -556,6 +559,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_hn_hnl",
       "cash_hr_eur",
       "cash_ht_htg",
+      "cash_hu_huf",
       "cash_ie_eur",
       "cash_im_gbp",
       "cash_in_inr",
@@ -580,6 +584,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_ly_lyd",
       "cash_ma_mad",
       "cash_mc_eur",
+      "cash_md_mdl",
       "cash_me_eur",
       "cash_mf_eur",
       "cash_mg_mga",
@@ -608,6 +613,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_pa_pab",
       "cash_pa_usd",
       "cash_pk_pkr",
+      "cash_pl_pln",
       "cash_pm_eur",
       "cash_pg_pgk",
       "cash_nr_aud",
@@ -620,7 +626,9 @@ test("every represented country has a built-in cash channel", () => {
       "cash_pe_pen",
       "cash_py_pyg",
       "cash_re_eur",
+      "cash_ro_ron",
       "cash_rs_rsd",
+      "cash_ru_rub",
       "cash_rw_rwf",
       "cash_sb_sbd",
       "cash_sc_scr",
@@ -629,6 +637,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_sh_shp",
       "cash_si_eur",
       "cash_sj_nok",
+      "cash_sk_eur",
       "cash_sl_sle",
       "cash_sm_eur",
       "cash_sn_xof",
@@ -650,6 +659,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_tt_ttd",
       "cash_tv_aud",
       "cash_tz_tzs",
+      "cash_ua_uah",
       "cash_ug_ugx",
       "cash_vu_vuv",
       "cash_us_usd",
@@ -1173,6 +1183,34 @@ test("registry exposes built-in cash channels for Southern European markets", ()
     { country: "SI", currency: "EUR", id: "cash_si_eur" },
     { country: "SM", currency: "EUR", id: "cash_sm_eur" },
     { country: "VA", currency: "EUR", id: "cash_va_eur" },
+  ];
+
+  for (const { country, currency, id } of markets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      currency,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(
+      channels.map((channel) => channel.id),
+      [id],
+    );
+  }
+});
+
+test("registry exposes built-in cash channels for Eastern European markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const markets = [
+    { country: "BG", currency: "BGN", id: "cash_bg_bgn" },
+    { country: "BY", currency: "BYN", id: "cash_by_byn" },
+    { country: "CZ", currency: "CZK", id: "cash_cz_czk" },
+    { country: "HU", currency: "HUF", id: "cash_hu_huf" },
+    { country: "MD", currency: "MDL", id: "cash_md_mdl" },
+    { country: "PL", currency: "PLN", id: "cash_pl_pln" },
+    { country: "RO", currency: "RON", id: "cash_ro_ron" },
+    { country: "RU", currency: "RUB", id: "cash_ru_rub" },
+    { country: "SK", currency: "EUR", id: "cash_sk_eur" },
+    { country: "UA", currency: "UAH", id: "cash_ua_uah" },
   ];
 
   for (const { country, currency, id } of markets) {
