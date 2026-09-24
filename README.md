@@ -162,7 +162,7 @@ export const exampleWalletXzXts = definePaymentChannelSchema({
 
 Use `definePaymentChannelSchema` at definition time. It rejects invalid IDs and code casing, invalid enum values, duplicate field or detail-row keys, malformed select fields, invalid regular expressions, invalid length rules, empty allow-lists, and detail rows that reference unknown fields.
 
-Built-in IDs use `<network>_<variant?>_<country>_<currency>`, with lowercase country and currency suffixes. Source files are grouped by country and omit the redundant market suffix: `src/channels/<country>/<network>_<variant?>.ts`. Country and currency remain explicit schema attributes even though currency is not repeated in the source path.
+Built-in IDs use `<network>_<variant?>_<country>_<currency>`, with lowercase country and currency suffixes. Source files are grouped by country and omit the redundant market suffix: `src/channels/<country>/<network>_<variant?>.ts`. For countries with multiple cash currencies, source files include the currency to avoid filename collisions: `src/channels/<country>/cash_<currency>.ts` (for example, `src/channels/ls/cash_lsl.ts` and `src/channels/ls/cash_zar.ts`). Country and currency remain explicit schema attributes even though currency is otherwise omitted from source paths.
 
 ## Built-in registry
 

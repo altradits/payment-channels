@@ -507,6 +507,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_km_kmf",
       "cash_lr_lrd",
       "cash_ls_lsl",
+      "cash_ls_zar",
       "cash_ly_lyd",
       "cash_ma_mad",
       "cash_mg_mga",
@@ -516,6 +517,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_mw_mwk",
       "cash_mz_mzn",
       "cash_na_nad",
+      "cash_na_zar",
       "cash_ne_xof",
       "cash_ng_ngn",
       "cash_pk_pkr",
@@ -530,6 +532,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_ss_ssp",
       "cash_st_stn",
       "cash_sz_szl",
+      "cash_sz_zar",
       "cash_td_xaf",
       "cash_tg_xof",
       "cash_tn_tnd",
@@ -609,9 +612,12 @@ test("registry exposes built-in cash channels for South African markets", () => 
     { country: "AO", currency: "AOA", id: "cash_ao_aoa" },
     { country: "BW", currency: "BWP", id: "cash_bw_bwp" },
     { country: "LS", currency: "LSL", id: "cash_ls_lsl" },
+    { country: "LS", currency: "ZAR", id: "cash_ls_zar" },
     { country: "MZ", currency: "MZN", id: "cash_mz_mzn" },
     { country: "NA", currency: "NAD", id: "cash_na_nad" },
+    { country: "NA", currency: "ZAR", id: "cash_na_zar" },
     { country: "SZ", currency: "SZL", id: "cash_sz_szl" },
+    { country: "SZ", currency: "ZAR", id: "cash_sz_zar" },
     { country: "ZM", currency: "ZMW", id: "cash_zm_zmw" },
   ];
 
@@ -624,6 +630,26 @@ test("registry exposes built-in cash channels for South African markets", () => 
     assert.deepEqual(
       channels.map((channel) => channel.id),
       [id],
+    );
+  }
+});
+
+test("registry exposes dual cash channels for Common Monetary Area (CMA) markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const cmaMarkets = [
+    { country: "LS", expectedIds: ["cash_ls_lsl", "cash_ls_zar"] },
+    { country: "NA", expectedIds: ["cash_na_nad", "cash_na_zar"] },
+    { country: "SZ", expectedIds: ["cash_sz_szl", "cash_sz_zar"] },
+  ];
+
+  for (const { country, expectedIds } of cmaMarkets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(
+      channels.map((channel) => channel.id),
+      expectedIds,
     );
   }
 });
@@ -740,7 +766,15 @@ test("channel source files are grouped by country and match stable channel IDs",
     assert.ok(channel.id.endsWith(marketSuffix), `${channel.id} must end with ${marketSuffix}`);
 
     const shortId = channel.id.slice(0, -marketSuffix.length);
-    const expectedPath = path.join(country, `${shortId}.ts`);
+    const countryCashChannels = builtinPaymentChannels.filter(
+      (candidate) =>
+        candidate.display.group === PaymentChannelGroup.Cash && candidate.network.country.toLowerCase() === country,
+    );
+    const expectedFilename =
+      channel.display.group === PaymentChannelGroup.Cash && countryCashChannels.length > 1
+        ? `cash_${currency}.ts`
+        : `${shortId}.ts`;
+    const expectedPath = path.join(country, expectedFilename);
     assert.equal(path.relative(channelsDirectory, filename), expectedPath);
   }
 });
