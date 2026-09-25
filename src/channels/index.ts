@@ -22,6 +22,7 @@ export { cashBiBifPaymentChannel } from "./bi/cash.js";
 export { cashBjXofPaymentChannel } from "./bj/cash.js";
 export { cashBlEurPaymentChannel } from "./bl/cash.js";
 export { cashBmBmdPaymentChannel } from "./bm/cash.js";
+export { cashBnBndPaymentChannel } from "./bn/cash.js";
 export { cashBoBobPaymentChannel } from "./bo/cash.js";
 export { cashBqUsdPaymentChannel } from "./bq/cash.js";
 export { cashBrBrlPaymentChannel } from "./br/cash.js";
@@ -87,6 +88,7 @@ export { cashHnHnlPaymentChannel } from "./hn/cash.js";
 export { cashHrEurPaymentChannel } from "./hr/cash.js";
 export { cashHtHtgPaymentChannel } from "./ht/cash.js";
 export { cashHuHufPaymentChannel } from "./hu/cash.js";
+export { cashIdIdrPaymentChannel } from "./id/cash.js";
 export { cashIeEurPaymentChannel } from "./ie/cash.js";
 export { cashImGbpPaymentChannel } from "./im/cash.js";
 export { cashInInrPaymentChannel } from "./in/cash.js";
@@ -103,6 +105,7 @@ export { mpesaPochiKeKesPaymentChannel } from "./ke/mpesa_pochi.js";
 export { mpesaTillKeKesPaymentChannel } from "./ke/mpesa_till.js";
 export { pesalinkAccountKeKesPaymentChannel } from "./ke/pesalink_account.js";
 export { cashKgKgsPaymentChannel } from "./kg/cash.js";
+export { cashKhKhrPaymentChannel } from "./kh/cash.js";
 export { cashKiAudPaymentChannel } from "./ki/cash.js";
 export { cashKmKmfPaymentChannel } from "./km/cash.js";
 export { cashKnXcdPaymentChannel } from "./kn/cash.js";
@@ -110,6 +113,7 @@ export { cashKpKpwPaymentChannel } from "./kp/cash.js";
 export { cashKrKrwPaymentChannel } from "./kr/cash.js";
 export { cashKyKydPaymentChannel } from "./ky/cash.js";
 export { cashKzKztPaymentChannel } from "./kz/cash.js";
+export { cashLaLakPaymentChannel } from "./la/cash.js";
 export { cashLcXcdPaymentChannel } from "./lc/cash.js";
 export { cashLiChfPaymentChannel } from "./li/cash.js";
 export { cashLrLrdPaymentChannel } from "./lr/cash_lrd.js";
@@ -129,6 +133,7 @@ export { cashMgMgaPaymentChannel } from "./mg/cash.js";
 export { cashMhUsdPaymentChannel } from "./mh/cash.js";
 export { cashMkMkdPaymentChannel } from "./mk/cash.js";
 export { cashMlXofPaymentChannel } from "./ml/cash.js";
+export { cashMmMmkPaymentChannel } from "./mm/cash.js";
 export { cashMnMntPaymentChannel } from "./mn/cash.js";
 export { cashMoMopPaymentChannel } from "./mo/cash.js";
 export { cashMpUsdPaymentChannel } from "./mp/cash.js";
@@ -143,6 +148,7 @@ export { cashMwMwkPaymentChannel } from "./mw/cash.js";
 export { tnmMpambaMwMwkPaymentChannel } from "./mw/tnm_mpamba.js";
 export { tnmMpambaMerchantMwMwkPaymentChannel } from "./mw/tnm_mpamba_merchant.js";
 export { cashMxMxnPaymentChannel } from "./mx/cash.js";
+export { cashMyMyrPaymentChannel } from "./my/cash.js";
 export { cashMzMznPaymentChannel } from "./mz/cash.js";
 export { cashNaNadPaymentChannel } from "./na/cash_nad.js";
 export { cashNaZarPaymentChannel } from "./na/cash_zar.js";
@@ -161,6 +167,7 @@ export { cashPaUsdPaymentChannel } from "./pa/cash_usd.js";
 export { cashPePenPaymentChannel } from "./pe/cash.js";
 export { cashPfXpfPaymentChannel } from "./pf/cash.js";
 export { cashPgPgkPaymentChannel } from "./pg/cash.js";
+export { cashPhPhpPaymentChannel } from "./ph/cash.js";
 export { cashPkPkrPaymentChannel } from "./pk/cash.js";
 export { cashPlPlnPaymentChannel } from "./pl/cash.js";
 export { cashPmEurPaymentChannel } from "./pm/cash.js";
@@ -178,6 +185,7 @@ export { cashSbSbdPaymentChannel } from "./sb/cash.js";
 export { cashScScrPaymentChannel } from "./sc/cash.js";
 export { cashSdSdgPaymentChannel } from "./sd/cash.js";
 export { cashSeSekPaymentChannel } from "./se/cash.js";
+export { cashSgSgdPaymentChannel } from "./sg/cash.js";
 export { cashShShpPaymentChannel } from "./sh/cash.js";
 export { cashSiEurPaymentChannel } from "./si/cash.js";
 export { cashSjNokPaymentChannel } from "./sj/cash.js";
@@ -197,8 +205,10 @@ export { cashSzZarPaymentChannel } from "./sz/cash_zar.js";
 export { cashTcUsdPaymentChannel } from "./tc/cash.js";
 export { cashTdXafPaymentChannel } from "./td/cash.js";
 export { cashTgXofPaymentChannel } from "./tg/cash.js";
+export { cashThThbPaymentChannel } from "./th/cash.js";
 export { cashTjTjsPaymentChannel } from "./tj/cash.js";
 export { cashTkNzdPaymentChannel } from "./tk/cash.js";
+export { cashTlUsdPaymentChannel } from "./tl/cash.js";
 export { cashTmTmtPaymentChannel } from "./tm/cash.js";
 export { cashTnTndPaymentChannel } from "./tn/cash.js";
 export { cashToTopPaymentChannel } from "./to/cash.js";
@@ -216,6 +226,7 @@ export { cashVcXcdPaymentChannel } from "./vc/cash.js";
 export { cashVeVesPaymentChannel } from "./ve/cash.js";
 export { cashVgUsdPaymentChannel } from "./vg/cash.js";
 export { cashViUsdPaymentChannel } from "./vi/cash.js";
+export { cashVnVndPaymentChannel } from "./vn/cash.js";
 export { cashVuVuvPaymentChannel } from "./vu/cash.js";
 export { cashWfXpfPaymentChannel } from "./wf/cash.js";
 export { cashWsWstPaymentChannel } from "./ws/cash.js";
@@ -247,6 +258,7 @@ import { cashBiBifPaymentChannel } from "./bi/cash.js";
 import { cashBjXofPaymentChannel } from "./bj/cash.js";
 import { cashBlEurPaymentChannel } from "./bl/cash.js";
 import { cashBmBmdPaymentChannel } from "./bm/cash.js";
+import { cashBnBndPaymentChannel } from "./bn/cash.js";
 import { cashBoBobPaymentChannel } from "./bo/cash.js";
 import { cashBqUsdPaymentChannel } from "./bq/cash.js";
 import { cashBrBrlPaymentChannel } from "./br/cash.js";
@@ -312,6 +324,7 @@ import { cashHnHnlPaymentChannel } from "./hn/cash.js";
 import { cashHrEurPaymentChannel } from "./hr/cash.js";
 import { cashHtHtgPaymentChannel } from "./ht/cash.js";
 import { cashHuHufPaymentChannel } from "./hu/cash.js";
+import { cashIdIdrPaymentChannel } from "./id/cash.js";
 import { cashIeEurPaymentChannel } from "./ie/cash.js";
 import { cashImGbpPaymentChannel } from "./im/cash.js";
 import { cashInInrPaymentChannel } from "./in/cash.js";
@@ -328,6 +341,7 @@ import { mpesaPochiKeKesPaymentChannel } from "./ke/mpesa_pochi.js";
 import { mpesaTillKeKesPaymentChannel } from "./ke/mpesa_till.js";
 import { pesalinkAccountKeKesPaymentChannel } from "./ke/pesalink_account.js";
 import { cashKgKgsPaymentChannel } from "./kg/cash.js";
+import { cashKhKhrPaymentChannel } from "./kh/cash.js";
 import { cashKiAudPaymentChannel } from "./ki/cash.js";
 import { cashKmKmfPaymentChannel } from "./km/cash.js";
 import { cashKnXcdPaymentChannel } from "./kn/cash.js";
@@ -335,6 +349,7 @@ import { cashKpKpwPaymentChannel } from "./kp/cash.js";
 import { cashKrKrwPaymentChannel } from "./kr/cash.js";
 import { cashKyKydPaymentChannel } from "./ky/cash.js";
 import { cashKzKztPaymentChannel } from "./kz/cash.js";
+import { cashLaLakPaymentChannel } from "./la/cash.js";
 import { cashLcXcdPaymentChannel } from "./lc/cash.js";
 import { cashLiChfPaymentChannel } from "./li/cash.js";
 import { cashLrLrdPaymentChannel } from "./lr/cash_lrd.js";
@@ -354,6 +369,7 @@ import { cashMgMgaPaymentChannel } from "./mg/cash.js";
 import { cashMhUsdPaymentChannel } from "./mh/cash.js";
 import { cashMkMkdPaymentChannel } from "./mk/cash.js";
 import { cashMlXofPaymentChannel } from "./ml/cash.js";
+import { cashMmMmkPaymentChannel } from "./mm/cash.js";
 import { cashMnMntPaymentChannel } from "./mn/cash.js";
 import { cashMoMopPaymentChannel } from "./mo/cash.js";
 import { cashMpUsdPaymentChannel } from "./mp/cash.js";
@@ -368,6 +384,7 @@ import { cashMwMwkPaymentChannel } from "./mw/cash.js";
 import { tnmMpambaMwMwkPaymentChannel } from "./mw/tnm_mpamba.js";
 import { tnmMpambaMerchantMwMwkPaymentChannel } from "./mw/tnm_mpamba_merchant.js";
 import { cashMxMxnPaymentChannel } from "./mx/cash.js";
+import { cashMyMyrPaymentChannel } from "./my/cash.js";
 import { cashMzMznPaymentChannel } from "./mz/cash.js";
 import { cashNaNadPaymentChannel } from "./na/cash_nad.js";
 import { cashNaZarPaymentChannel } from "./na/cash_zar.js";
@@ -386,6 +403,7 @@ import { cashPaUsdPaymentChannel } from "./pa/cash_usd.js";
 import { cashPePenPaymentChannel } from "./pe/cash.js";
 import { cashPfXpfPaymentChannel } from "./pf/cash.js";
 import { cashPgPgkPaymentChannel } from "./pg/cash.js";
+import { cashPhPhpPaymentChannel } from "./ph/cash.js";
 import { cashPkPkrPaymentChannel } from "./pk/cash.js";
 import { cashPlPlnPaymentChannel } from "./pl/cash.js";
 import { cashPmEurPaymentChannel } from "./pm/cash.js";
@@ -403,6 +421,7 @@ import { cashSbSbdPaymentChannel } from "./sb/cash.js";
 import { cashScScrPaymentChannel } from "./sc/cash.js";
 import { cashSdSdgPaymentChannel } from "./sd/cash.js";
 import { cashSeSekPaymentChannel } from "./se/cash.js";
+import { cashSgSgdPaymentChannel } from "./sg/cash.js";
 import { cashShShpPaymentChannel } from "./sh/cash.js";
 import { cashSiEurPaymentChannel } from "./si/cash.js";
 import { cashSjNokPaymentChannel } from "./sj/cash.js";
@@ -422,8 +441,10 @@ import { cashSzZarPaymentChannel } from "./sz/cash_zar.js";
 import { cashTcUsdPaymentChannel } from "./tc/cash.js";
 import { cashTdXafPaymentChannel } from "./td/cash.js";
 import { cashTgXofPaymentChannel } from "./tg/cash.js";
+import { cashThThbPaymentChannel } from "./th/cash.js";
 import { cashTjTjsPaymentChannel } from "./tj/cash.js";
 import { cashTkNzdPaymentChannel } from "./tk/cash.js";
+import { cashTlUsdPaymentChannel } from "./tl/cash.js";
 import { cashTmTmtPaymentChannel } from "./tm/cash.js";
 import { cashTnTndPaymentChannel } from "./tn/cash.js";
 import { cashToTopPaymentChannel } from "./to/cash.js";
@@ -441,6 +462,7 @@ import { cashVcXcdPaymentChannel } from "./vc/cash.js";
 import { cashVeVesPaymentChannel } from "./ve/cash.js";
 import { cashVgUsdPaymentChannel } from "./vg/cash.js";
 import { cashViUsdPaymentChannel } from "./vi/cash.js";
+import { cashVnVndPaymentChannel } from "./vn/cash.js";
 import { cashVuVuvPaymentChannel } from "./vu/cash.js";
 import { cashWfXpfPaymentChannel } from "./wf/cash.js";
 import { cashWsWstPaymentChannel } from "./ws/cash.js";
@@ -473,6 +495,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashBlEurPaymentChannel,
   cashBmBmdPaymentChannel,
   cashArArsPaymentChannel,
+  cashBnBndPaymentChannel,
   cashBoBobPaymentChannel,
   cashBqUsdPaymentChannel,
   cashBrBrlPaymentChannel,
@@ -538,6 +561,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashHrEurPaymentChannel,
   cashHtHtgPaymentChannel,
   cashHuHufPaymentChannel,
+  cashIdIdrPaymentChannel,
   cashIeEurPaymentChannel,
   cashImGbpPaymentChannel,
   cashInInrPaymentChannel,
@@ -554,6 +578,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   airtelMoneyKeKesPaymentChannel,
   cashKeKesPaymentChannel,
   cashKgKgsPaymentChannel,
+  cashKhKhrPaymentChannel,
   cashKiAudPaymentChannel,
   cashKmKmfPaymentChannel,
   cashKnXcdPaymentChannel,
@@ -563,6 +588,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashLiChfPaymentChannel,
   cashKyKydPaymentChannel,
   cashKzKztPaymentChannel,
+  cashLaLakPaymentChannel,
   cashLrLrdPaymentChannel,
   cashLrUsdPaymentChannel,
   cashLsLslPaymentChannel,
@@ -580,6 +606,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashMhUsdPaymentChannel,
   cashMkMkdPaymentChannel,
   cashMlXofPaymentChannel,
+  cashMmMmkPaymentChannel,
   cashMnMntPaymentChannel,
   cashMoMopPaymentChannel,
   cashMpUsdPaymentChannel,
@@ -594,6 +621,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   tnmMpambaMwMwkPaymentChannel,
   tnmMpambaMerchantMwMwkPaymentChannel,
   cashMxMxnPaymentChannel,
+  cashMyMyrPaymentChannel,
   cashMzMznPaymentChannel,
   cashNaNadPaymentChannel,
   cashNaZarPaymentChannel,
@@ -607,6 +635,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashNzNzdPaymentChannel,
   cashPaPabPaymentChannel,
   cashPaUsdPaymentChannel,
+  cashPhPhpPaymentChannel,
   cashPkPkrPaymentChannel,
   cashPlPlnPaymentChannel,
   cashPmEurPaymentChannel,
@@ -629,6 +658,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashScScrPaymentChannel,
   cashSdSdgPaymentChannel,
   cashSeSekPaymentChannel,
+  cashSgSgdPaymentChannel,
   cashShShpPaymentChannel,
   cashSiEurPaymentChannel,
   cashSjNokPaymentChannel,
@@ -648,8 +678,10 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashTcUsdPaymentChannel,
   cashTdXafPaymentChannel,
   cashTgXofPaymentChannel,
+  cashThThbPaymentChannel,
   cashTjTjsPaymentChannel,
   cashTkNzdPaymentChannel,
+  cashTlUsdPaymentChannel,
   cashTmTmtPaymentChannel,
   cashTnTndPaymentChannel,
   cashToTopPaymentChannel,
@@ -670,6 +702,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashVeVesPaymentChannel,
   cashVgUsdPaymentChannel,
   cashViUsdPaymentChannel,
+  cashVnVndPaymentChannel,
   cashYtEurPaymentChannel,
   payshapShapidZaZarPaymentChannel,
   payshapAccountZaZarPaymentChannel,
