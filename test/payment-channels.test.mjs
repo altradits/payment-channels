@@ -514,6 +514,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_ck_nzd",
       "cash_cl_clp",
       "cash_cm_xaf",
+      "cash_cn_cny",
       "cash_co_cop",
       "cash_cr_crc",
       "cash_cu_cup",
@@ -556,6 +557,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_gu_usd",
       "cash_gw_xof",
       "cash_gy_gyd",
+      "cash_hk_hkd",
       "cash_hn_hnl",
       "cash_hr_eur",
       "cash_ht_htg",
@@ -567,11 +569,14 @@ test("every represented country has a built-in cash channel", () => {
       "cash_it_eur",
       "cash_je_gbp",
       "cash_jm_jmd",
+      "cash_jp_jpy",
       "cash_ke_kes",
       "cash_kg_kgs",
       "cash_ki_aud",
       "cash_km_kmf",
       "cash_kn_xcd",
+      "cash_kp_kpw",
+      "cash_kr_krw",
       "cash_lc_xcd",
       "cash_li_chf",
       "cash_ky_kyd",
@@ -593,6 +598,8 @@ test("every represented country has a built-in cash channel", () => {
       "cash_mh_usd",
       "cash_mk_mkd",
       "cash_ml_xof",
+      "cash_mn_mnt",
+      "cash_mo_mop",
       "cash_mp_usd",
       "cash_mq_eur",
       "cash_mr_mru",
@@ -662,6 +669,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_to_top",
       "cash_tt_ttd",
       "cash_tv_aud",
+      "cash_tw_twd",
       "cash_tz_tzs",
       "cash_ua_uah",
       "cash_ug_ugx",
@@ -1239,6 +1247,32 @@ test("registry exposes built-in cash channels for Central Asian markets", () => 
     { country: "TJ", currency: "TJS", id: "cash_tj_tjs" },
     { country: "TM", currency: "TMT", id: "cash_tm_tmt" },
     { country: "UZ", currency: "UZS", id: "cash_uz_uzs" },
+  ];
+
+  for (const { country, currency, id } of markets) {
+    const channels = listPaymentChannelSchemas(registry, {
+      country,
+      currency,
+      group: PaymentChannelGroup.Cash,
+    });
+    assert.deepEqual(
+      channels.map((channel) => channel.id),
+      [id],
+    );
+  }
+});
+
+test("registry exposes built-in cash channels for Eastern Asian markets", () => {
+  const registry = createPaymentChannelRegistry();
+  const markets = [
+    { country: "CN", currency: "CNY", id: "cash_cn_cny" },
+    { country: "HK", currency: "HKD", id: "cash_hk_hkd" },
+    { country: "JP", currency: "JPY", id: "cash_jp_jpy" },
+    { country: "KP", currency: "KPW", id: "cash_kp_kpw" },
+    { country: "KR", currency: "KRW", id: "cash_kr_krw" },
+    { country: "MN", currency: "MNT", id: "cash_mn_mnt" },
+    { country: "MO", currency: "MOP", id: "cash_mo_mop" },
+    { country: "TW", currency: "TWD", id: "cash_tw_twd" },
   ];
 
   for (const { country, currency, id } of markets) {
