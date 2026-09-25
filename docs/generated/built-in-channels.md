@@ -106,6 +106,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_il_ils`                | Cash                     | `IL`    | `ILS`    | `cash`         | `none`     |       2 |
 | `cash_im_gbp`                | Cash                     | `IM`    | `GBP`    | `cash`         | `none`     |       2 |
 | `cash_in_inr`                | Cash                     | `IN`    | `INR`    | `cash`         | `none`     |       2 |
+| `cash_io_usd`                | Cash                     | `IO`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_iq_iqd`                | Cash                     | `IQ`    | `IQD`    | `cash`         | `none`     |       2 |
 | `cash_ir_irr`                | Cash                     | `IR`    | `IRR`    | `cash`         | `none`     |       2 |
 | `cash_is_isk`                | Cash                     | `IS`    | `ISK`    | `cash`         | `none`     |       2 |
@@ -231,6 +232,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_sz_zar`                | Cash                     | `SZ`    | `ZAR`    | `cash`         | `none`     |       2 |
 | `cash_tc_usd`                | Cash                     | `TC`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_td_xaf`                | Cash                     | `TD`    | `XAF`    | `cash`         | `none`     |       2 |
+| `cash_tf_eur`                | Cash                     | `TF`    | `EUR`    | `cash`         | `none`     |       2 |
 | `cash_tg_xof`                | Cash                     | `TG`    | `XOF`    | `cash`         | `none`     |       2 |
 | `cash_th_thb`                | Cash                     | `TH`    | `THB`    | `cash`         | `none`     |       2 |
 | `cash_tj_tjs`                | Cash                     | `TJ`    | `TJS`    | `cash`         | `none`     |       2 |
