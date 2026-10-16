@@ -20,7 +20,7 @@ The runtime registry is authoritative. This inventory is provided for human insp
 | `cash_as_usd`                | Cash                     | `AS`    | `USD`    | `cash`         | `none`     |       2 |
 | `cash_at_eur`                | Cash                     | `AT`    | `EUR`    | `cash`         | `none`     |       2 |
 | `cash_bf_xof`                | Cash                     | `BF`    | `XOF`    | `cash`         | `none`     |       2 |
-| `cash_bg_bgn`                | Cash                     | `BG`    | `BGN`    | `cash`         | `none`     |       2 |
+| `cash_bg_eur`                | Cash                     | `BG`    | `EUR`    | `cash`         | `none`     |       2 |
 | `cash_bi_bif`                | Cash                     | `BI`    | `BIF`    | `cash`         | `none`     |       2 |
 | `cash_bj_xof`                | Cash                     | `BJ`    | `XOF`    | `cash`         | `none`     |       2 |
 | `cash_bl_eur`                | Cash                     | `BL`    | `EUR`    | `cash`         | `none`     |       2 |

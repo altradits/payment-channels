@@ -238,7 +238,7 @@
     "network": { "id": "cash", "label": "Cash", "country": "BF", "currency": "XOF" }
   },
   {
-    "id": "cash_bg_bgn",
+    "id": "cash_bg_eur",
     "version": 2,
     "display": {
       "label": "Cash",
@@ -252,7 +252,7 @@
     "detailRows": [],
     "instructions": { "payer": ["Exchange cash in person and keep local receipt evidence when required."] },
     "evidence": [{ "key": "receiptNote", "label": "Receipt note", "type": "text", "required": false }],
-    "network": { "id": "cash", "label": "Cash", "country": "BG", "currency": "BGN" }
+    "network": { "id": "cash", "label": "Cash", "country": "BG", "currency": "EUR" }
   },
   {
     "id": "cash_bi_bif",
