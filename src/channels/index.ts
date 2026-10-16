@@ -17,7 +17,7 @@ export { cashBaBamPaymentChannel } from "./ba/cash.js";
 export { cashBbBbdPaymentChannel } from "./bb/cash.js";
 export { cashBeEurPaymentChannel } from "./be/cash.js";
 export { cashBfXofPaymentChannel } from "./bf/cash.js";
-export { cashBgBgnPaymentChannel } from "./bg/cash.js";
+export { cashBgEurPaymentChannel } from "./bg/cash.js";
 export { cashBiBifPaymentChannel } from "./bi/cash.js";
 export { cashBjXofPaymentChannel } from "./bj/cash.js";
 export { cashBlEurPaymentChannel } from "./bl/cash.js";
@@ -229,7 +229,7 @@ import { cashBaBamPaymentChannel } from "./ba/cash.js";
 import { cashBbBbdPaymentChannel } from "./bb/cash.js";
 import { cashBeEurPaymentChannel } from "./be/cash.js";
 import { cashBfXofPaymentChannel } from "./bf/cash.js";
-import { cashBgBgnPaymentChannel } from "./bg/cash.js";
+import { cashBgEurPaymentChannel } from "./bg/cash.js";
 import { cashBiBifPaymentChannel } from "./bi/cash.js";
 import { cashBjXofPaymentChannel } from "./bj/cash.js";
 import { cashBlEurPaymentChannel } from "./bl/cash.js";
@@ -441,7 +441,7 @@ export const builtinPaymentChannels: readonly PaymentChannelSchema[] = [
   cashAsUsdPaymentChannel,
   cashAtEurPaymentChannel,
   cashBfXofPaymentChannel,
-  cashBgBgnPaymentChannel,
+  cashBgEurPaymentChannel,
   cashBiBifPaymentChannel,
   cashBjXofPaymentChannel,
   cashBlEurPaymentChannel,

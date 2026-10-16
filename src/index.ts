@@ -53,7 +53,7 @@ export {
   cashBbBbdPaymentChannel,
   cashBeEurPaymentChannel,
   cashBfXofPaymentChannel,
-  cashBgBgnPaymentChannel,
+  cashBgEurPaymentChannel,
   cashBiBifPaymentChannel,
   cashBjXofPaymentChannel,
   cashBlEurPaymentChannel,

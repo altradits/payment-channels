@@ -1,7 +1,7 @@
 import { createCashPaymentChannel } from "../shared.js";
 
-export const cashBgBgnPaymentChannel = createCashPaymentChannel({
-  id: "cash_bg_bgn",
+export const cashBgEurPaymentChannel = createCashPaymentChannel({
+  id: "cash_bg_eur",
   country: "BG",
-  currency: "BGN",
+  currency: "EUR",
 });

@@ -492,7 +492,7 @@ test("every represented country has a built-in cash channel", () => {
       "cash_as_usd",
       "cash_at_eur",
       "cash_bf_xof",
-      "cash_bg_bgn",
+      "cash_bg_eur",
       "cash_bi_bif",
       "cash_bj_xof",
       "cash_bl_eur",
@@ -1201,7 +1201,7 @@ test("registry exposes built-in cash channels for Southern European markets", ()
 test("registry exposes built-in cash channels for Eastern European markets", () => {
   const registry = createPaymentChannelRegistry();
   const markets = [
-    { country: "BG", currency: "BGN", id: "cash_bg_bgn" },
+    { country: "BG", currency: "EUR", id: "cash_bg_eur" },
     { country: "BY", currency: "BYN", id: "cash_by_byn" },
     { country: "CZ", currency: "CZK", id: "cash_cz_czk" },
     { country: "HU", currency: "HUF", id: "cash_hu_huf" },
